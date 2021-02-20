@@ -1,0 +1,62 @@
+/*
+   CSS styling examples for the Vaadin app.
+   Visit https://vaadin.com/docs/flow/theme/theming-overview.html and
+   https://vaadin.com/themes/lumo for more information.
+*/
+
+/* Example: CSS class name to center align the content . */
+.centered-content {
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+.client-list-view .content {
+  display: flex;
+}
+
+.client-list-view .client-grid {
+  flex: 2;
+}
+
+.client-list-view .client-form {
+  flex: 1;
+  padding: var(--lumo-space-m);
+}
+
+.credit-list-view .content {
+  display: flex;
+}
+
+.credit-list-view .credit-grid {
+  flex: 2;
+}
+
+.credit-list-view .credit-form {
+  flex: 1;
+  padding: var(--lumo-space-m);
+}
+
+@media all and (max-width: 1100px) {
+  .client-list-view.editing .toolbar,
+  .client-list-view.editing .client-grid,
+  .credit-list-view.editing .toolbar,
+  .credit-list-view.editing .credit-grid,
+  .bank-list-view.editing .toolbar,
+  .bank-list-view.editing .bank-grid{
+    display: none;
+  }
+}
+
+a[highlight] {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.header {
+  padding: 0 var(--lumo-space-m);
+}
+
+.header h1.logo {
+  font-size: 1em;
+  margin: var(--lumo-space-m);
+}
